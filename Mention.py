@@ -10,9 +10,9 @@ logging.basicConfig(
 )
 LOGGER = logging.getLogger(__name__)
 
-api_id = int(os.environ.get("APP_ID"))
-api_hash = os.environ.get("API_HASH")
-bot_token = os.environ.get("TOKEN")
+api_id = int(os.environ.get("APP_ID","28496124")
+api_hash = os.environ.get("API_HASH","dcadf01f9a76befff2eccc932c6eabd1")
+bot_token = os.environ.get("TOKEN","5840432215:AAGhOu9yvCG6ualVnNIkcOvqrMzJIyNu7O0")
 client = TelegramClient('client', api_id, api_hash).start(bot_token=bot_token)
 
 emoji_calisan = []
